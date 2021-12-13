@@ -1,26 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "fonctions.h"
 
-struct position{
-    int x;
-    int y;
-};
-typedef struct position stposition;
-
-stposition generePositionRandom();
-int** creerPlateau(FILE* fichier);
-void decaleADroite(int** plateau, stposition p, int dejaMerge);
-void joueADroite(int** plateau);
-void decaleAGauche(int** plateau, stposition p, int dejaMerge);
-void joueAGauche(int** plateau);
-void decaleEnHaut(int** plateau, stposition p, int dejaMerge);
-void joueEnHaut(int** plateau);
-void decaleEnBas(int** plateau, stposition p, int dejaMerge);
-void joueEnBas(int** plateau);
-void ajoutCase(int** plateau, FILE* fichier);
-int verifLoose(int** plateau);
-void affichePlateau(int** plateau);
 
 //  IMPERFECTION détectée: lorsqu'il y a 0 2 2 4 sur une ligne et que l'on joue 'gauche', tous les nombres se mergent 
 //  en commençant par la gauche et on obtient 8 0 0 0 au lieu d'obtenir 4 4 0 0
