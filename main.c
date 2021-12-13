@@ -5,9 +5,9 @@
 #include <SDL/SDL_ttf.h>
 
 //fichiers custom
-#include <header.h>
-#include <joue.c>
-#include <rejoue.c>
+#include <fonctions.h>
+#include <joue.h>
+#include <rejoue.h>
 
 int main(){
     int choix;

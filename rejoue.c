@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <dirent.h>
-#include <header.h>
+#include <rejoue.h>
 
 //Ceci a été modifié par thibault
 

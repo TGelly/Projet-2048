@@ -8,4 +8,4 @@ gcc -o main.c header.h main -lSDL -lSDL_ttf
 main.c      est le fichier principal, il appelle les fonctions contenues dans les autres fichiers.
 Joue        contient le code pour jouer une nouvelle partie
 Rejoue      contient le code pour rejouer une partie à partir d'un fichier
-header.h    contient toutes les déclarations de fonctions
+fichiers.h  contiennent tous les prototypes de fonctions

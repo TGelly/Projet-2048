@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-struct position{
-    int x;
-    int y;
-};
-typedef struct position stposition;
+#include <fonctions.h>
 
 
 //  IMPERFECTION détectée: lorsqu'il y a 0 2 2 4 sur une ligne et que l'on joue 'gauche', tous les nombres se mergent 
