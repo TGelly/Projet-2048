@@ -3,7 +3,11 @@
 #include <time.h>
 #include <SDL/SDL.h>
 #include <SDL/SDL_ttf.h>
+
+//fichiers custom
 #include <header.h>
+#include <joue.c>
+#include <rejoue.c>
 
 int main(){
     int choix;
@@ -11,9 +15,10 @@ int main(){
     scanf("%d", choix);
     switch(choix){
         case 1:
-            
+            Joue();
             break;
         case 2:
+            Rejoue();
             break;
         default:
             break;

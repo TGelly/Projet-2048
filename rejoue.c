@@ -17,7 +17,7 @@ void rejoueCoup(FILE* fichier){
 }
 
 
-int main(){
+void Rejoue(){
 
     //On ouvre le dossier 2048 et on propose à l'utilisateur d'ouvrir un des fichiers textes qu'il contient.
     DIR* FD;
