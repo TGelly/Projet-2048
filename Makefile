@@ -3,11 +3,11 @@ OBJ = main.o
 HEADER = header.h
 CFLAGS = -c -Wall 
 
-hello: $(OBJ) 
+hello: $(OBJ)
     $(CC) $(OBJ) -o $@
 
 main.o: src/main.cpp $(HEADER)
     $(CC) $(CFLAGS) $< -o $@
 
-clean: 
+clean:
     rm -rf *o hello

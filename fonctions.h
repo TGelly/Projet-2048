@@ -1,12 +1,10 @@
-#ifndef H_GL_HELLO
-#define H_GL_HELLO
+#include <stdio.h>
 
 struct position{
     int x;
     int y;
 };
 typedef struct position stposition;
-
 
 stposition generePositionRandom();
 int** creerPlateau(FILE* fichier);
@@ -21,5 +19,3 @@ void joueEnBas(int** plateau);
 void ajoutCase(int** plateau, FILE* fichier);
 int verifLoose(int** plateau);
 void affichePlateau(int** plateau);
-
-#endif
