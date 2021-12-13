@@ -4,6 +4,8 @@
 #include <dirent.h>
 #include <header.h>
 
+//Ceci a été modifié par thibault
+
 void rejoueInitialisation(FILE* fichier){
 
 }
