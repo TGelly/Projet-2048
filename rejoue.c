@@ -11,6 +11,8 @@ void rejoueInitialisation(FILE* fichier){
 }
 
 void rejoueCoup(FILE* fichier){
+    int a, b, c;
+    scanf("%d %d %d", a, b, c);
 
 }
 
