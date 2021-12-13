@@ -1,7 +1,6 @@
-#ifndef JOUE_H
-#define JOUE_H
+#ifndef AFFICHAGE_H
+#define AFFICHAGE_H
 
 void affichePlateauSDL(int** plateau);
-void Joue();
 
 #endif

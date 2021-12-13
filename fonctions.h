@@ -1,3 +1,6 @@
+#ifndef FONCTIONS_H
+#define FONCTIONS_H
+
 #include <stdio.h>
 
 struct position{
@@ -19,3 +22,5 @@ void joueEnBas(int** plateau);
 void ajoutCase(int** plateau, FILE* fichier);
 int verifLoose(int** plateau);
 void affichePlateau(int** plateau);
+
+#endif
