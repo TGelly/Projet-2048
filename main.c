@@ -103,6 +103,7 @@ int main(){
         SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 255, 255, 255));
         SDL_BlitSurface(texte, NULL, surface, &positionSDL); //Blit du texte
         SDL_Flip(surface);
+        //Modifications ici pour la SDL @gabin3601
         */
         
     }
