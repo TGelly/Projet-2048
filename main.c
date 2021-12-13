@@ -5,9 +5,10 @@
 #include <SDL/SDL_ttf.h>
 
 //fichiers custom
-#include <fonctions.h>
-#include <joue.h>
-#include <rejoue.h>
+#include "fonctions.h"
+#include "joue.h"
+#include "rejoue.h"
+#include "affichage.h"
 
 int main(){
     int choix;

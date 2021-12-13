@@ -2,7 +2,7 @@
 Projet de jeu 2048 en C
 
 Commande de compilation:
-gcc -o main.c header.h main -lSDL -lSDL_ttf
+gcc *.c -o prog -lSDL -lSDL_ttf
 
 
 main.c      est le fichier principal, il appelle les fonctions contenues dans les autres fichiers.
