@@ -13,7 +13,7 @@
 int main(){
     int choix, err=1;
     printf("Que voulez-vous faire?\n1 - Jouer une nouvelle partie\n2 - rejouer une ancienne partie\n");
-    scanf("%d", choix);
+    scanf("%d", &choix);
     while (err==1)
     {
         switch(choix){
@@ -28,7 +28,7 @@ int main(){
             default:
                 printf("Erreur, la saisie est incorrecte, veuillez recommencer.\n");
                 printf("Que voulez-vous faire?\n1 - Jouer une nouvelle partie\n2 - rejouer une ancienne partie\n");
-                scanf("%d", choix);
+                scanf("%d", &choix);
                 break;
         }
     }
