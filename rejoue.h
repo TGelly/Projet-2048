@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-void rejoueInitialisation(FILE* fichier);
-void rejoueCoup(FILE* fichier);
+int** rejoueInitialisation(FILE* fichier);
+void rejoueCoup(FILE* fichier, int** plateau);
 void Rejoue();
 
 #endif
