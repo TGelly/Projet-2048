@@ -35,10 +35,19 @@ void Rejoue(){
     if (NULL == (dossier = opendir ("/"))){
         printf("Erreur: Echec de l'ouverture du dossier.\n");
     }
-    //sélection 
-    while ((FILE* fichier = readdir(dossier)) != NULL) {
-        
+    printf("Succès de l'ouverture du dossier.\n");
+    //scan des fichiers et proposition à l'utilisateur
+    printf("0");
+    struct dirent * scanFichier;
+    printf("1");
+    scanFichier = readdir(dossier);
+    printf("2");
+
+    /*
+    while ((scanFichier = readdir(dossier)) != NULL) {
+        printf("%s", scanFichier->d_name);
     }
+    */
 
 
     //On ouvre le fichier choisi par l'utilisateur
