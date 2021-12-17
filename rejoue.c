@@ -29,14 +29,21 @@ void Rejoue(){
     */
 
     //On recherche donc les fichiers de jeu dans le dossier principal:
+    //ouverture du dossier
     DIR* dossier;
-    if (NULL == (dossier = opendir (""))){
+    printf("Ouverture du dossier.\n");
+    if (NULL == (dossier = opendir ("/"))){
         printf("Erreur: Echec de l'ouverture du dossier.\n");
     }
+    //sélection 
+    while ((FILE* fichier = readdir(dossier)) != NULL) {
+        
+    }
+
 
     //On ouvre le fichier choisi par l'utilisateur
-    char* cheminFichier;
-    FILE* fichier = fopen(cheminFichier, "r");
+    char* nomFichier;
+    FILE* fichier = fopen(nomFichier, "r");
 
     //On rejoue la partie en l'affichant
     rejoueInitialisation(fichier);

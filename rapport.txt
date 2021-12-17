@@ -2,3 +2,4 @@ les choses qui ont demandé de la réflexion :
 
 - définir l'ordre de balayage de la fonction joue() en fonction de la direction choisie
 - fixer un mode d'enregistrement pour les parties qui consomme le moins de mémoire possible
+- essayer de proposer à l'utilisateur 
