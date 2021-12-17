@@ -1,13 +1,13 @@
-CC = g++
+CC = gcc
 OBJ = main.o
-HEADER = header.h
-CFLAGS = -c -Wall 
+HEADER = *.h
+CFLAGS = -Wall -lSDL
 
 hello: $(OBJ)
-    $(CC) $(OBJ) -o $@
+<tab>$(CC) $(OBJ) -o $@
 
 main.o: src/main.cpp $(HEADER)
-    $(CC) $(CFLAGS) $< -o $@
+$(CC) $(CFLAGS) $< -o $@
 
 clean:
-    rm -rf *o hello
+rm -rf *o hello
