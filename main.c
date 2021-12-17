@@ -13,7 +13,7 @@
 int main(){
     int choix;
     printf("Que voulez-vous faire?\n1 - Jouer une nouvelle partie\n2 - rejouer une ancienne partie\n");
-    scanf("%d", choix);
+    scanf("%d", &choix);
     switch(choix){
         case 1:
             Joue();
