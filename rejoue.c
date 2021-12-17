@@ -35,8 +35,8 @@ void Rejoue(){
     }
 
     //On ouvre le fichier choisi par l'utilisateur
-    char* nomFichier;
-    FILE* fichier = fopen(nomFichier, "r");
+    char* cheminFichier;
+    FILE* fichier = fopen(cheminFichier, "r");
 
     //On rejoue la partie en l'affichant
     rejoueInitialisation(fichier);

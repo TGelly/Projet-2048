@@ -11,18 +11,26 @@
 #include "affichage.h"
 
 int main(){
-    int choix;
+    int choix, err=1;
     printf("Que voulez-vous faire?\n1 - Jouer une nouvelle partie\n2 - rejouer une ancienne partie\n");
     scanf("%d", &choix);
-    switch(choix){
-        case 1:
-            Joue();
-            break;
-        case 2:
-            Rejoue();
-            break;
-        default:
-            break;
+    while (err==1)
+    {
+        switch(choix){
+            case 1:
+                Joue();
+                err=0;
+                break;
+            case 2:
+                Rejoue();
+                err=0;
+                break;
+            default:
+                printf("Erreur, la saisie est incorrecte, veuillez recommencer.\n");
+                printf("Que voulez-vous faire?\n1 - Jouer une nouvelle partie\n2 - rejouer une ancienne partie\n");
+                scanf("%d", &choix);
+                break;
+        }
     }
     return 0;
 }
