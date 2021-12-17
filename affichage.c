@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "affichage.h"
 
 void affichePlateauSDL(int** plateau){
