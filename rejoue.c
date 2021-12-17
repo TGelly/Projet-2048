@@ -19,9 +19,18 @@ void rejoueCoup(FILE* fichier){
 
 void Rejoue(){
 
-    //On ouvre le dossier 2048 et on propose à l'utilisateur d'ouvrir un des fichiers textes qu'il contient.
+    /*
+        Le but de ces lignes était d'ouvrir le dossier gamefiles et de proposer à l'utilisateur d'ouvrir un des fichiers
+        texte à l'intérieur. Comme expliqué à la ligne 17 de joue.c, ce n'est pas possible.
     DIR* FD;
-    if (NULL == (FD = opendir ("/gamefiles"))){
+    if (NULL == (FD = opendir ("gamefiles/"))){
+        printf("Erreur: Echec de l'ouverture du dossier.\n");
+    }
+    */
+
+    //On recherche donc les fichiers de jeu dans le dossier principal:
+    DIR* dossier;
+    if (NULL == (dossier = opendir (""))){
         printf("Erreur: Echec de l'ouverture du dossier.\n");
     }
 
@@ -34,7 +43,4 @@ void Rejoue(){
     while(feof(fichier) == 0){
         rejoueCoup(fichier);
     }
-    
-
-    //FILE* fichier = fopen();
 }

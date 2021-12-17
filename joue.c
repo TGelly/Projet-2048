@@ -14,6 +14,17 @@ void Joue(){
     //le nom du fichier sera composé de la date et de l'heure du début de la partie
     time_t now;
     time(&now);
+    /*
+        Ceci est une tentative de modifier le dossier de création des fichiers de jeux, malheureusement l'appel de strcat() provoque
+        une erreur de segmentation sans que je puisse l'expliquer. J'ai essayé d'allouer plus de mémoire aux variables car il semblerait
+        que strcat() en ait besoin, mais cela n'a pas résolu l'erreur de segmentation.
+
+    char* nomFichier = malloc(500*sizeof(char));
+    nomFichier = ctime(&now);
+    char* path = malloc(500*sizeof(char));
+    path = "gamefiles/";
+    strcat(path, nomFichier);
+    */
     char* nomFichier = ctime(&now);
     printf("Début de la partie: %s\n", nomFichier);
     FILE* fichier = fopen(nomFichier,"w+");
